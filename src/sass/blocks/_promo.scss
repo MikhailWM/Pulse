@@ -34,13 +34,16 @@
 		text-align: center;
 		color: #ffffff;		
 		font-size: 14px;
-		font-weight: 500;			
+		font-weight: 500;				
 		img {
 			margin-bottom: 20px;
 			display: block;
 			margin: 0 auto;
-		}
+		}		
 	}
+	&__subtitle {
+		margin-top: 10px;
+	}	
 	&__link {
 		margin-top: 18px;
 		color: #ffffff;		
