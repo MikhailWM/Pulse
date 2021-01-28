@@ -1,2 +1,4 @@
 #folder node_modules
 /node_modules
+#.jshintrc add 28.01.2021
+.jshintrc
