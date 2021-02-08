@@ -97,7 +97,7 @@ $(document).ready(function () {
 	});
 
 	//pageup smooth scroll
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1600) {
 			$('.pageup').fadeIn();
 		} else {
@@ -105,10 +105,32 @@ $(document).ready(function () {
 		}
 	});
 
-	$("a[href^='#']").click(function(){
+	$("a[href^='#']").click(function () {
 		const _href = $(this).attr("href");
-		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		$("html, body").animate({
+			scrollTop: $(_href).offset().top + "px"
+		});
 		return false;
 	});
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({
+			scrollTop: $(_href).offset().top + "px"
+		});
+		return false;
+	});
+
+	new WOW().init();
 
 });
